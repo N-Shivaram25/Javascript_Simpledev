@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let soup_cost = 10,burger_cost = 8 ,icecream_cost = 5;
+        const Restaurant_items_cost = soup_cost + (3 * burger_cost) + icecream_cost;
+        console.log(Restaurant_items_cost);
+
+        let total_persons_count = 3;
+        const Each_Person_Payment = Restaurant_items_cost/ total_persons_count;
+        console.log(Each_Person_Payment);
+
+        let Toaster = 18.50,shirt = 7.50;
+        const Total_cost_purchased = Toaster + (2 * shirt);
+        console.log(Total_cost_purchased);
+
+        const Including_Tax = Total_cost_purchased * 0.1;
+        console.log (Including_Tax);
+        const Including_Tax2 = Total_cost_purchased * 0.2;
+        console.log (Including_Tax2);
+
+        let cost_AmazonProducts = (2095 + 799 + 1899) / 100;
+        let cost_before_Tax = (2095 + 799 + 1899 + 499) / 100;
+        Math.round((2095 + 799 + 1899 + 499) * 0.1) / 100;
+        const Order_Total = (2095 + 799 + 1899 + 499) / 100 + Math.round((2095 + 799 + 1899 + 499) * 0.1) / 100;
+        console.log("Amazon Order Total :" + Order_Total);
+
+       
+        console.log("Using floor function (2.8):" + Math.floor(2.8));
+        console.log("Using floor function (2.2):" + Math.ceil(2.2));
+
+        
+        
+        {
+        let Celsius_Temperature1 = 25;
+        let Fahrenheit_Temperature = 86;
+        const Temperature_in_Fahrenheit = (Celsius_Temperature1 * 9/5) + 32;
+        const Temperature_in_Celsius = (Fahrenheit_Temperature -32)*5/9;
+        console.log("temperature in fahrenheit :" + Temperature_in_Fahrenheit +"F");
+        console.log("temperature in celsius :" + Temperature_in_Celsius +"c");
+        }
+
+        let Celsius_Temperature2 = -5;
+        const Temperature_in_Fahrenheit = (Celsius_Temperature2 * 9/5) + 32;
+        console.log("temperature in fahrenheit :" + Temperature_in_Fahrenheit +"F");
+
+
+
+    </script>
+</body>
+</html>
