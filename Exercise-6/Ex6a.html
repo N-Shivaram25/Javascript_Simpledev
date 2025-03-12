@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let hour = 10;
+    hour =2;
+    hour =5;
+
+    if (hour >= 6 && hour <= 12) {
+    console.log('Good morning!');
+    } else if (hour >= 13 && hour <= 17) {
+    console.log('Good afternoon!');
+    } else {
+    console.log('Good night!');
+    }
+
+    const hour2 = 12;
+      const name = 'Shivaram';
+
+      if (hour2 >= 6 && hour2 <= 12) {
+        console.log(`Good morning ${name}!`);
+      } else if (hour2 >= 13 && hour2 <= 17) {
+        console.log(`Good afternoon ${name}!`);
+      } else {
+        console.log(`Good night ${name}!`);
+      }
+
+
+    const age = 5;
+    if (age <= 6 || age >= 65) {
+    console.log('discount');
+    } else {
+    console.log('No discount');
+    }
+
+    const age2 = 8;
+      const isHoliday = true;
+      if ((age2 <= 6 || age2 >= 65) && !isHoliday) {
+        console.log('discount');
+      } else {
+        console.log('No discount');
+      }
+
+    const randomNumber = Math.random();
+    console.log('Math random function value:' + randomNumber);
+
+    const randomNumber2 = Math.random();
+    if (randomNumber2 < 0.5) {
+    console.log('heads');
+    } else {
+    console.log('tails');
+    }
+
+    const randomNumber3 = Math.random();
+      let result;
+
+      if (randomNumber3 < 0.5) {
+        result = 'heads';
+      } else {
+        result = 'tails';
+      }
+
+      const randomNumber4 = Math.random();
+      let result2;
+
+      if (randomNumber4 < 0.5) {
+        result2 = 'heads';
+      } else {
+        result2 = 'tails';
+      }
+
+      const guess = 'heads';
+      if (guess === result2) {
+        console.log('You win!');
+      } else {
+        console.log('You lose!');
+      }
+    </script>
+</body>
+</html>

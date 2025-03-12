@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greet() {
+            console.log('Hello!');
+        }
+        greet();
+        greet();
+        greet();
+
+      
+        function greet(name) {
+            console.log(`Hello ${name}!`);
+        }
+        greet('Shiva');
+        greet('Ram');
+
+        function convertToFahrenheit(celsius) {
+            return (celsius * 9 / 5) + 32;
+        }
+        console.log(`7c Output: ${convertToFahrenheit(25)}°F`);
+
+       
+        function convertToCelsius(fahrenheit) {
+            return (fahrenheit - 32) * 5 / 9;
+        }
+        console.log(`7d Output: ${convertToCelsius(86)}°C`);
+
+ 
+        function convertTemperature(degrees, unit) {
+            if (unit === 'C') {
+                const result = convertToFahrenheit(degrees);
+                return `${result}°F`;
+            } else if (unit === 'F') {
+                const result = convertToCelsius(degrees);
+                return `${result}°C`;
+            } else {
+                return 'Invalid unit';
+            }
+        }
+        console.log(`7e Output: ${convertTemperature(25, 'C')}`);
+        console.log(`7e Output: ${convertTemperature(86, 'F')}`);
+
+        
+        function convertLength(length, from, to) {
+            if (from === 'km' && to === 'miles') {
+                return `${length / 1.609} miles`;
+            } else if (from === 'miles' && to === 'km') {
+                return `${length * 1.609} km`;
+            } else if (from === to) {
+                return `${length} ${to}`;
+            } else {
+                return 'Invalid conversion';
+            }
+        }
+        console.log(`7f Output: ${convertLength(50, 'miles', 'km')}`);
+        console.log(`7f Output: ${convertLength(32, 'km', 'miles')}`);
+        console.log(`7f Output: ${convertLength(50, 'km', 'km')}`);
+
+        
+        function convertLengthExtended(length, from, to) {
+            if (from === 'km' && to === 'miles') {
+                return `${length / 1.609} miles`;
+            } else if (from === 'km' && to === 'ft') {
+                return `${length * 3280.84} ft`;
+            } else if (from === 'miles' && to === 'km') {
+                return `${length * 1.609} km`;
+            } else if (from === 'miles' && to === 'ft') {
+                return `${length * 5280} ft`;
+            } else if (from === 'ft' && to === 'km') {
+                return `${length / 3280.84} km`;
+            } else if (from === 'ft' && to === 'miles') {
+                return `${length / 5280} miles`;
+            } else if (from === to) {
+                return `${length} ${to}`;
+            } else {
+                return 'Invalid conversion';
+            }
+        }
+        console.log(`7g Output: ${convertLengthExtended(50, 'miles', 'km')}`);
+        console.log(`7g Output: ${convertLengthExtended(32, 'km', 'miles')}`);
+        console.log(`7g Output: ${convertLengthExtended(50, 'km', 'km')}`);
+        console.log(`7g Output: ${convertLengthExtended(5, 'miles', 'km')}`);
+        console.log(`7g Output: ${convertLengthExtended(5, 'miles', 'ft')}`);
+        console.log(`7g Output: ${convertLengthExtended(5, 'km', 'ft')}`);
+
+    </script>
+</body>
+</html>
